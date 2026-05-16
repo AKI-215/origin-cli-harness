@@ -1,0 +1,4 @@
+interface:
+  display_name: "Origin CLI Harness"
+  short_description: "Build command-line harnesses for Origin via COM and LabTalk"
+  default_prompt: "Use $origin-cli-harness to create a CLI-Anything harness that controls OriginLab Origin from the command line."
