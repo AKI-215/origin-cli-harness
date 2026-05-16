@@ -4,6 +4,29 @@
 
 重点是 **CLI 接入方式**，不是 GUI 坐标点击。优先使用 Origin 原生的 COM Automation 和 LabTalk。
 
+## 适用版本
+
+已实测环境：
+
+- OriginLab Origin 2024，安装路径为 `D:\Program Files\OriginLab\Origin2024`
+- 已注册 Origin COM Automation 的 Windows 桌面会话
+- Python 3.12
+- GitHub CLI 2.92.0，用于发布本仓库
+
+预期兼容环境：
+
+- 暴露 `Origin.ApplicationSI`、`Origin.ApplicationCOMSI` 或 `Origin.Application` 的 OriginLab Origin 版本
+- Windows + `pywin32`
+- Python 3.9+
+
+注意：Origin 必须已经授权并且能在当前桌面会话中正常启动。首次运行弹窗、许可证提示、更新提示等，需要先手动处理，再交给 CLI 自动化。
+
+## 相关库地址
+
+- 本 Skill 仓库：<https://github.com/AKI-215/origin-cli-harness>
+- CLI-Anything 上游项目：<https://github.com/HKUDS/CLI-Anything>
+- CLI-Anything OpenCode 实验性支持说明：<https://github.com/HKUDS/CLI-Anything/blob/main/README_CN.md#-opencode-%E5%AE%9E%E9%AA%8C%E6%80%A7%E6%94%AF%E6%8C%81>
+
 ## 提供内容
 
 - `SKILL.md`：Codex skill 触发说明和工作流。
@@ -31,7 +54,7 @@ origin-cli-harness/
 把本仓库复制或克隆到 Codex skills 目录：
 
 ```powershell
-git clone https://github.com/<your-name>/origin-cli-harness.git "$env:USERPROFILE\.codex\skills\origin-cli-harness"
+git clone https://github.com/AKI-215/origin-cli-harness.git "$env:USERPROFILE\.codex\skills\origin-cli-harness"
 ```
 
 然后重启 Codex，让它重新发现 skill。

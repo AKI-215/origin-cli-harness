@@ -4,6 +4,29 @@ Build CLI-Anything style command-line harnesses for OriginLab Origin on Windows 
 
 This skill is focused on the CLI integration pattern: make Origin controllable from Codex, Claude Code, OpenCode, PowerShell, or any agent/tool that can call a command-line interface. It avoids brittle GUI coordinate clicking and wraps Origin's native automation surfaces instead.
 
+## Compatibility
+
+Tested environment:
+
+- OriginLab Origin 2024, installed at `D:\Program Files\OriginLab\Origin2024`
+- Windows desktop session with Origin COM Automation registered
+- Python 3.12
+- GitHub CLI 2.92.0 for publishing this repository
+
+Expected compatible environment:
+
+- OriginLab Origin versions that expose `Origin.ApplicationSI`, `Origin.ApplicationCOMSI`, or `Origin.Application`
+- Windows with `pywin32`
+- Python 3.9+
+
+Origin must be licensed and able to launch interactively. First-run dialogs, license prompts, or update prompts should be cleared manually before unattended CLI use.
+
+## Related Repositories
+
+- This skill repository: <https://github.com/AKI-215/origin-cli-harness>
+- CLI-Anything upstream project: <https://github.com/HKUDS/CLI-Anything>
+- CLI-Anything OpenCode support documentation: <https://github.com/HKUDS/CLI-Anything/blob/main/README_CN.md#-opencode-%E5%AE%9E%E9%AA%8C%E6%80%A7%E6%94%AF%E6%8C%81>
+
 ## What It Provides
 
 - A Codex-compatible `SKILL.md` for triggering Origin CLI harness work.
