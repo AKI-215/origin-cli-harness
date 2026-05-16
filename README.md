@@ -1,5 +1,7 @@
 # Origin CLI Harness Skill
 
+Language: English | [中文](README_CN.md)
+
 Build CLI-Anything style command-line harnesses for OriginLab Origin on Windows using COM Automation and LabTalk.
 
 This skill is focused on the CLI integration pattern: make Origin controllable from Codex, Claude Code, OpenCode, PowerShell, or any agent/tool that can call a command-line interface. It avoids brittle GUI coordinate clicking and wraps Origin's native automation surfaces instead.

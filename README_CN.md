@@ -1,5 +1,7 @@
 # Origin CLI Harness Skill
 
+语言：[English](README.md) | 中文
+
 这是一个用于把 OriginLab Origin 接入命令行/Agent 工作流的 Codex Skill。核心目标是：用 CLI-Anything 风格生成可安装的 `cli-anything-origin` 命令，让 Codex、Claude Code、OpenCode、PowerShell 或其他工具可以通过命令行控制 Origin。
 
 重点是 **CLI 接入方式**，不是 GUI 坐标点击。优先使用 Origin 原生的 COM Automation 和 LabTalk。
